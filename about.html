@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Arnav Nayak</title>
+    <meta name="description" content="Portfolio Site">
+    <meta name="author" content="Arnav Nayak">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <span id='nav'>
+          <a id = 'home' href="index.html">>$ cd /home/</a>
+          <span id='right'>
+              <nav>
+                  <ul class = 'topnav'>
+                      <li class = 'horz'><a class='link' href="about.html">About</a></li>
+                      <span class='footer-content-blue'>|</span>
+                      <li class = 'horz'><a class='link' href="projects.html">Projects</a></li>
+                  </ul>
+              </nav>
+          </span>
+      </span>
+    </header>
+
+    <div id = 'page2'>
+      <div style="display: inline; position: fixed;">
+        <ul class = 'sidebar'>
+            <li class = 'aboutlink' onclick='clickAbstract()'>Abstract</li>
+            <li class = 'aboutlink' onclick='clickCourse()'>Coursework</li>
+            <li class = 'aboutlink' onclick='clickExp()'>Experience</li>
+        </ul>
+      </div>
+
+      <div style = 'display: inline-block;' id = 'Abstract'>
+        <h2>About Me</h2>
+        <p>Hi there! My name is Arnav Nayak. I'm a current Electrical and Computer Engineering Student at Duke Univeristy that would love to do nothing more than spend his time listening to new music and watching movies. But that would leave me with a lot of free time. Instead, I code, read books, weightlift, study philosophy, solve puzzles, learn quantum phenomena - the whole shebang. This site highlights some of my computer science related ventures, but I assure you this barely scratches the surface of my semi interesting academic and extracirrciular ventures. </p>
+      </div>
+
+      <div id = 'Courses' style="display: none;">
+        <h2>Coursework</h2>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Modern Physics</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Differential Equations and Complex Analysis</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Multivariable Calculus and Linear Algebra</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Data Structures</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Independent Study - Artificial Intelligence</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Virtual Reality Design</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">Mobile App Development and Game Design</p>
+        <p style= "margin-bottom: 7px; margin-top: 7px">AP Physics 1/C, AP Computer Science, AP Calc AB/BC, AP Macro/Micro</p>
+      </div>
+
+      <div id = 'Experience' style="display: none;">
+        <h2>Experience <a style="font-size: 18px;" href="static/images/2021resume.pdf">(Click here for more detail!)</a></h2>
+        <h4>Software Engineering Internship @ Bloomberg</h4>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Worked with the engineering triage team to improve visibility in Bloomberg's internal ticketing system</p>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Used React, Flask, Web Sockets and other industry tools to create a web application that tapped directly into Bloomberg's databases in order to display real time ticketing data. </p>
+        <h4>Code Tutor @ Code Ninjas</h4>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Tutored kids in computer science with the basics of Javascript and Python</p>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Created Robotics League for elementary and middle school students to spur interest in the field of robotics and human computer interaction </p>
+        <h4>CS Club Officer @ SBHS</h4>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Led and taught lessons at our school's CS Club</p>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Arranged and organized our annual hackathon HackSB </p>
+        <h4>Head Programmer of VEX Robotics Team</h4>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Programmed our school robotics team's robot for competitive play in C++</p>
+        <p style="padding-left: 25px; margin-top: 7px; margin-bottom: 7px"> -Made it to VEX Worlds to compete in an international stage</p>
+      </div>
+    </div>
+
+    <footer>
+      <span class='footer-content'>Made with</span>
+      <span><img src="static/images/heart.png"></img></span>
+      <span class='footer-content'> by Arnav Nayak</span>
+      <span class="footer-content-blue">|</span>
+      <span class='footer-content'>2021<span>
+    </footer>
+
+    <script>
+      function clickAbstract() {
+        var x = document.getElementById('Courses');
+        var y = document.getElementById('Abstract');
+        var z = document.getElementById('Experience');        
+        x.style.display = "none";
+        y.style.display = "inline-block";
+        z.style.display = "none";
+      }
+    </script>
+
+    <script>
+      function clickCourse() {
+        var x = document.getElementById('Courses');
+        var y = document.getElementById('Abstract');
+        var z = document.getElementById('Experience');
+        x.style.display = "inline-block";
+        y.style.display = "none";
+        z.style.display = "none";
+      }
+    </script>
+
+    <script>
+      function clickExp() {
+        var x = document.getElementById('Courses');
+        var y = document.getElementById('Abstract');
+        var z = document.getElementById('Experience');
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
