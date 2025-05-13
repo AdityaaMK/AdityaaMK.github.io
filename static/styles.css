@@ -201,22 +201,27 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     border-bottom: 1px solid var(--accent-color);
     z-index: 1000;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    height: 3.2rem;
+    min-height: 0;
   }
   .nav-pill {
-    width: 100vw;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    background: none;
-    justify-content: space-around;
-    padding: 0.5rem 0;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0.2rem 0 !important;
+    min-height: 0;
   }
   .nav-item {
-    flex: 1 1 0;
-    justify-content: center;
-    border-radius: 0;
-    background: none;
-    min-width: 0;
+    padding: 0.2rem 0.2rem !important;
+    font-size: 1rem;
+  }
+  /* Social icons: increase opacity for better visibility */
+  .social-links img,
+  .social-links .social-link svg {
+    opacity: 1 !important;
   }
   /* Add more top padding to main content so headings don't overlap nav */
   #page1 {
@@ -240,15 +245,19 @@ footer {
 
   #nav-bar {
     top: 0;
-    height: 3.2rem;
+    height: 2.7rem;
   }
   .nav-pill {
-    padding: 0.2rem 0;
+    padding: 0.1rem 0;
   }
   #page1 {
     padding-top: 3.7rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .nav-item {
+    font-size: 0.95rem;
+    padding: 0.1rem 0.1rem !important;
   }
 }
 
