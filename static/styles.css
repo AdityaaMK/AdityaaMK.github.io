@@ -375,34 +375,3 @@ footer {
 .nav-toggle {
   padding: 0.5rem !important;
 }
-
-/* Remove old nav styles if needed */
-#nav, .topnav, .horz {
-  all: unset;
-}
-
-.amk-icon {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 0.05em;
-  color: #000;
-  -webkit-text-stroke: 2px #000;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5rem;
-  background: none;
-}
-.night-mode .amk-icon {
-  color: #fff;
-  -webkit-text-stroke: 2px #fff;
-}
-@media (max-width: 600px) {
-  .amk-icon {
-    font-size: 1.3rem;
-    -webkit-text-stroke: 1.2px #000;
-  }
-  .night-mode .amk-icon {
-    -webkit-text-stroke: 1.2px #fff;
-  }
-}
