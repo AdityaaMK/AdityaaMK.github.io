@@ -244,6 +244,12 @@ footer {
     margin-left: 0;
     margin-right: 0;
   }
+  #nav-bar, .nav-pill {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: var(--background-color) !important;
+  }
 }
 
 @media (max-width: 480px) {
