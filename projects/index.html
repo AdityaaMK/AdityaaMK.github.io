@@ -23,6 +23,31 @@
 			<div class="fade-in" style="max-width: 700px; margin: 0 auto">
 				<h1 style="margin-bottom: 2.5rem">Projects</h1>
 				<div class="projects-grid">
+					<!-- Kubernetes Relationship Scraper -->
+					<div class="card">
+						<h3 style="margin-top: 1.5rem">Kubernetes Relationship Scraper</h3>
+						<p style="color: #1565c0; font-size: 1rem">
+							Go, Kubernetes, Graph Algorithms
+						</p>
+						<p>
+							A lightweight Go tool that extracts resources from a Kubernetes
+							cluster, builds a real-time graph of their relationships, and
+							outputs it as JSON. It maps connections such as Pod→Node,
+							Pod→ReplicaSet, Service→Pod (via label selectors), and
+							Deployment→ConfigMap. The scraper uses efficient in-memory data
+							structures, Kubernetes watch APIs for low overhead, and emits the
+							full relationship graph every 30 seconds. Designed for minimal
+							resource usage and continuous monitoring of large clusters without
+							overloading the API server.
+						</p>
+						<p>
+							<a
+								href="https://github.com/AdityaaMK/kubernetes-scraper"
+								style="color: #1565c0"
+								>[GitHub]</a
+							>
+						</p>
+					</div>
 					<!-- ByteFight @ GT -->
 					<div class="card">
 						<h3 style="margin-top: 1.5rem">ByteFight @ GT</h3>
