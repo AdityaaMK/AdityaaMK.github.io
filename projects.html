@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Projects | Adityaa Magesh Kumar</title>
+		<meta name="description" content="Projects by Adityaa Magesh Kumar" />
+		<meta name="author" content="Adityaa Magesh Kumar" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="static/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav id="nav-bar">
+				<div class="nav-pill">
+					<a href="index.html" class="nav-item">
+						<svg
+							width="20"
+							height="20"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path d="M3 12L12 3l9 9" />
+							<path d="M9 21V9h6v12" />
+						</svg>
+						<span>Home</span>
+					</a>
+					<a href="experience.html" class="nav-item">
+						<svg
+							width="20"
+							height="20"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<circle cx="12" cy="8" r="6" />
+							<path d="M8.5 14.5 7 21l5-3 5 3-1.5-6.5" />
+						</svg>
+						<span>Experience</span>
+					</a>
+					<a href="projects.html" class="nav-item">
+						<svg
+							width="20"
+							height="20"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path
+								d="M3 7a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"
+							/>
+						</svg>
+						<span>Projects</span>
+					</a>
+					<a href="#contact" class="nav-item">
+						<svg
+							width="20"
+							height="20"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<rect x="2" y="5" width="20" height="14" rx="2" />
+							<path d="m22 5-10 7L2 5" />
+						</svg>
+						<span>Contact</span>
+					</a>
+					<button
+						id="night-mode-toggle"
+						aria-label="Toggle night mode"
+						class="nav-item nav-toggle"
+						style="
+							background: none;
+							border: none;
+							cursor: pointer;
+							padding: 0 8px;
+						"
+					>
+						<span id="night-mode-icon">🌙</span>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main id="page1">
+			<div class="fade-in" style="max-width: 900px; margin: 0 auto">
+				<h1 style="text-align: center">Projects</h1>
+				<div class="projects-grid">
+					<!-- ByteFight @ GT -->
+					<div class="card">
+						<h3 style="margin-top: 1.5rem">ByteFight @ GT</h3>
+						<p style="color: #1565c0; font-size: 1rem">
+							Algorithms / AI Competition
+						</p>
+						<p>
+							Placed Top 5 out of 25+ teams at the inaugural ByteFight
+							tournament (Spring 2025), sponsored by Google. Built competitive
+							AI bots for a real-time strategy game inspired by MIT Battlecode.
+						</p>
+						<p>
+							<a
+								href="https://github.com/AdityaaMK/bytefight-gt"
+								style="color: #1565c0"
+								>[GitHub]</a
+							>
+						</p>
+					</div>
+					<!-- Med-Bench -->
+					<div class="card">
+						<h3 style="margin-top: 1.5rem">Med-Bench</h3>
+						<p style="color: #1565c0; font-size: 1rem">
+							NLP, Medical AI Benchmark, Computational Biology
+						</p>
+						<p>
+							<strong>Abstract:</strong> There exist several Large Language
+							Models (LLMs) that can be utilized for several tasks in the
+							medical research space, including Natural Language Inference
+							(NLI), Question Answering (QA), and Sequence Classification. In
+							this project, we introduce MedBench, a benchmark dataset we
+							curated involving multiple sequence classification, question
+							answering, and NLI tasks, all on medical data. We combined MedNLI,
+							MedQA, Disease Symptoms, PubMedQA, and BioASQ datasets, and used
+							text-based data augmentation to increase the number of samples. We
+							evaluated state-of-the-art models—BioGPT, Clinical BERT, and
+							BioBERT—on MedBench, demonstrating its utility for benchmarking
+							LLMs in medical research.
+						</p>
+						<p>
+							<a href="MCB_Final_Project.pdf" style="color: #1565c0" download
+								>[Full Paper]</a
+							>
+							<a
+								href="https://github.com/saisree27/med-bench"
+								style="color: #1565c0"
+								>[GitHub]</a
+							>
+						</p>
+					</div>
+					<!-- DamageDetectors -->
+					<div class="card">
+						<h3 style="margin-top: 1.5rem">DamageDetectors</h3>
+						<p style="color: #1565c0; font-size: 1rem">
+							Machine Learning, Computer Vision
+						</p>
+						<p>
+							Developed a deep learning pipeline to classify damaged and
+							undamaged buildings from post-hurricane satellite imagery, aiming
+							to accelerate disaster response and risk assessment. Used CNNs,
+							multi-modal models (combining image and geolocation data),
+							autoencoders for image compression, and unsupervised clustering
+							for auto-labeling. Trained and evaluated on the Hurricane Harvey
+							dataset (~24,000 images) and tested generalizability on the xBD
+							dataset (59,000+ images from multiple disasters). Achieved up to
+							91% accuracy. Explored model regularization, data augmentation,
+							and practical deployment challenges.
+						</p>
+						<p>
+							<a
+								href="https://cassidy-gasteiger.github.io/DamageDetectors/"
+								style="color: #1565c0"
+								>[Full Report]</a
+							>
+							<a
+								href="https://github.com/Cassidy-Gasteiger/DamageDetectors"
+								style="color: #1565c0"
+								>[GitHub]</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<span class="footer-content">© 2025 Adityaa Magesh Kumar</span>
+		</footer>
+		<script>
+			(function () {
+				const html = document.documentElement;
+				const toggle = document.getElementById("night-mode-toggle");
+				const icon = document.getElementById("night-mode-icon");
+				function setNightMode(on) {
+					html.classList.toggle("night-mode", on);
+					icon.textContent = on ? "☀️" : "🌙";
+					localStorage.setItem("nightMode", on ? "1" : "0");
+				}
+				const nightPref = localStorage.getItem("nightMode") === "1";
+				setNightMode(nightPref);
+				if (toggle)
+					toggle.onclick = () =>
+						setNightMode(!html.classList.contains("night-mode"));
+			})();
+		</script>
+	</body>
+</html>
