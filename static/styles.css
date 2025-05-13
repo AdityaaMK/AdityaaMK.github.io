@@ -187,6 +187,69 @@ footer {
   #page1 {
     padding: 6rem 1rem 2rem;
   }
+
+  /* Navigation as fixed top bar */
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transform: none;
+    justify-content: center;
+    padding: 0;
+    background: var(--background-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-bottom: 1px solid var(--accent-color);
+    z-index: 1000;
+  }
+  .nav-pill {
+    width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+  }
+  .nav-item {
+    flex: 1 1 0;
+    justify-content: center;
+    border-radius: 0;
+    background: none;
+    min-width: 0;
+  }
+  /* Add more top padding to main content so headings don't overlap nav */
+  #page1 {
+    padding-top: 4.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* Consistent fade-in container padding */
+  .fade-in {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.75rem;
+  }
+
+  #nav-bar {
+    top: 0;
+    height: 3.2rem;
+  }
+  .nav-pill {
+    padding: 0.2rem 0;
+  }
+  #page1 {
+    padding-top: 3.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* Animations */
@@ -293,109 +356,6 @@ footer {
 
 .nav-toggle {
   padding: 0.5rem !important;
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-  header {
-    padding: 1rem;
-  }
-
-  #nav-bar {
-    top: 1rem;
-    width: calc(100% - 2rem);
-    max-width: 100%;
-  }
-
-  .nav-pill {
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.25rem;
-  }
-
-  .nav-item {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-  }
-
-  .nav-item span {
-    display: none;
-  }
-
-  .nav-item svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  #page1 {
-    padding: 5rem 1rem 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .card {
-    padding: 1rem;
-  }
-
-  .social-links {
-    gap: 1rem;
-  }
-
-  .social-links img,
-  .social-links .social-link svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-/* Small Mobile Devices */
-@media (max-width: 480px) {
-  header {
-    padding: 0.75rem;
-  }
-
-  #nav-bar {
-    top: 0.75rem;
-  }
-
-  .nav-pill {
-    padding: 0.2rem;
-  }
-
-  .nav-item {
-    padding: 0.2rem 0.4rem;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.125rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
 }
 
 /* Remove old nav styles if needed */
