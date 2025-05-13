@@ -206,17 +206,25 @@ footer {
     border-radius: 0 !important;
     height: 3.2rem;
     min-height: 0;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: var(--background-color);
   }
   .nav-pill {
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
+    background: none !important;
     padding: 0.2rem 0 !important;
     min-height: 0;
   }
   .nav-item {
-    padding: 0.2rem 0.2rem !important;
-    font-size: 1rem;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0.2rem 0 !important;
+    min-height: 0;
   }
   /* Social icons: increase opacity for better visibility */
   .social-links img,
@@ -248,7 +256,7 @@ footer {
     height: 2.7rem;
   }
   .nav-pill {
-    padding: 0.1rem 0;
+    padding: 0.1rem 0 !important;
   }
   #page1 {
     padding-top: 3.7rem;
