@@ -6,10 +6,6 @@ function createNav() {
 		<div class="site-nav">
 			<a href="/" class="site-title">AMK</a>
 			<div class="nav-links">
-				<a href="/#about" class="nav-item">About</a>
-				<a href="/#experience" class="nav-item">Experience</a>
-				<a href="/#readings" class="nav-item">Readings</a>
-				<a href="/#movies" class="nav-item">Movies</a>
 				<button
 					id="night-mode-toggle"
 					type="button"
