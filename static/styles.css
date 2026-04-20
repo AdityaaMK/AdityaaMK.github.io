@@ -297,6 +297,20 @@ header {
   margin-bottom: 0.2rem;
 }
 
+.media-list {
+  gap: 1.15rem;
+}
+
+.media-title-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.media-title-link:hover,
+.media-title-link:focus-visible {
+  color: var(--muted-color);
+}
+
 .page-title {
   margin-bottom: 2.5rem;
 }

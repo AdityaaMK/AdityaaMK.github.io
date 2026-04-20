@@ -10,7 +10,6 @@ function createNav() {
 				<a href="/#experience" class="nav-item">Experience</a>
 				<a href="/#readings" class="nav-item">Readings</a>
 				<a href="/#movies" class="nav-item">Movies</a>
-				<a href="/#songs" class="nav-item">Songs</a>
 				<button
 					id="night-mode-toggle"
 					type="button"
